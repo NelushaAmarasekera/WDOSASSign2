@@ -1,0 +1,42 @@
+
+h1,h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: url("../pictures/sss.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+#para1{
+    text-align: center;
+}
+
+/*form styling*/
+
+#Loyalty{
+    display: none;
+  }
+.order-box{
+    justify-content: center;
+    background-image: url("../pictures/buy2.jpg");
+    background-attachment: fixed;
+  }
+.extra-items{
+    text-align: center;
+}
+.option-box{
+    text-align: center;
+}
+.button{
+    justify-content: space-between;
+    align-items:center;
+    padding-right: 5%;
+}
+
+
+
+
+/*desktop styling*/
+@media(min-width:760px){
+}

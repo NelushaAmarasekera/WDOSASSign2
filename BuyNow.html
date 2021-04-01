@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<HTML LANG="EN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This site is about eco friendly products in sri lanka">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eco Life</title>
+        <link rel="stylesheet" href="css files/styles.css">
+        <link rel="stylesheet" href="css files/normalize.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="appimages/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="appimages/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="appimages/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="appimages/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="appimages/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="appimages/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    
+
+    <body>
+        <div id=container1>
+        <header id="mainHeader">
+            <img src="pictures/logo2.png" alt="eco life" width="150" height="150">
+        </header>
+        <!--Main Navigation bar-->
+        <nav class="mainNav">
+            <ul>
+                <li><a href="index.html"><span class="navText">Home</span></a></li>
+                <li><a href="TypesOfProducts.html"><span class="navText">Types of Products</span></a></li>
+                <li class="navText_mobile"><a href="Manufacturers.html"><span class="navText">Manufac- turers</span></a></li>
+                <li class="navText_desktop"><a href="Manufacturers.html"><span class="navText">Manufacturers</span></a></li>
+                <li><a href="BuyNow.html"><span class="navText">Buy now</span></a></li>
+                <li><a href="ContactUs.html"><span class="navText">Contact Us</span></a></li>
+            </ul>
+        </nav>
+
+        
+        
+        
+        <div class="order-box">
+        
+            <br>
+            <h2>Purchase Your Eco Product</h2>  
+                
+                <div class= "option-box">
+                <div class="option1">
+                <br>
+                <label>Manufacturer</label>
+                <select id="Manufacturer" name="Manufacturer">
+                    <option value="Trickledown">Trickledown</option>
+                    <option value="BacktoEarth">BacktoEarth</option>
+                    <option value="Eco-Products SL">Eco-Products SL</option>
+                    <option value="Hayleys-Fibre">Hayleys-Fibre</option>
+                    <option value="Eco-Films">Eco-Films</option>
+                    <option value="Ecoware-Lanka">Ecowear-Lanka</option>
+                </select><br><br>
+                </div>
+
+                <div class="option2">
+                <label>Product</label>
+                <select id="Product" name="Product">
+                    <option value="Bags">Bags</option>
+                    <option value="Plates">Plates</option>
+                    <option value="Mugs">Mugs</option>
+                    <option value="Books">Books</option>
+                    <option value="Soap">Soap</option>
+                    <option value="Vases">Vases</option>
+                </select><br><br>
+                </div>
+
+                <div class="option3">
+                <label>Size</label>
+                <select id="Size" name="Size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br><br>
+                </div>
+            
+
+                <div class="extras-box">
+                    <h4>Extras(Optional)</h4>
+                        <div class="extra-items">
+                            <div class="item1">
+                                <label>Eco-Friendly Packaging</label>
+                                <input type="checkbox" name="Extra" value="Packaging" class="extItem">
+                            </div>	
+                            <br>
+            
+                            <div class="item2">
+                                <label>Eco-Friendly Greeting cards</label>
+                                <input type="checkbox" name="Extra" value="Greetingcards" class="extItem">
+                            </div>
+                            <br>
+                            <div class="item3">
+                                <label>Eco-Friendly Decorations</label>
+                                <input type="checkbox" name="Extra" value="Decorations" class="extItem"> 
+                            </div>
+                        </div><br>
+                </div>
+            </div>
+            <br>
+                <div class="button">
+                    <div class="BTN"><button id="placeOrder" onclick="orderProcess.placeOrder()">Place Order</button></div>
+                    <div class="BTN"><button id="addToOrder" onclick="orderProcess.addToCart()">Add to Order</button></div>
+                    <div class="BTN"><button id="addToFav" onclick="orderProcess.addToFavourite()">Add Favourite</button></div>
+                    <div class="BTN"><button id="orderFav" onclick="orderProcess.orderFavourite()">Order Favourite</button></div>
+                    <div class="BTN"><button id="checkLoyalty" onclick="orderProcess.checkLoyalty()">Check Loyalty</button></div>
+                </div>
+
+
+            <hr>
+           
+            <section id="cartspace"> 
+                <div id='cart'>
+                    <table id="Total-Order">
+                        <caption><h4>Total Order</h4></caption>
+                        <thead>
+                            <tr>
+                                <th>Manufacturer</th>
+                                <th>Size</th>
+                                <th>Product</th>
+                                <th>Extras</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="t-data">
+                        </tbody>
+                    </table>
+            
+                </div>
+                </section>
+            
+        
+        
+        
+        
+        <!--Footer codes-->
+        <footer>
+            <div class="main-content">
+            <div class="left box">
+                <img src="pictures/logo2.png" alt="logo">
+            </div>
+            <div class="center box">
+                <h2>About us</h2>
+                <div class="content">
+                <p>Eco Life is a website that was built to aware the society of the use of Eco Friendly products and their advantages to life and society.
+                    we aim to raise awareness about the impact of single use plastic on our health and communities, and to tell the world to join with us for a green future.
+                </p>
+                <div class="Socials">
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+            </div>
+            <div class="right box">
+                <h2>Reach us</h2>
+                <div class="content">
+                    <div class="reachus">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Rosmead Place,Colombo 07</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+94-777263544</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">ecolife@hotmail.com</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        </footer>
+    </div>
+</div>
+    <script src="scripts/buynow.js"> </script>
+    </body>
+</html>
